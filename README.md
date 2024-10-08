@@ -1,40 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Inspirational Quotes App
 
-## Getting Started
+This is a simple web application built with Next.js that displays an inspirational quote on the homepage and some background about Master Oogway on the About page. This project is part of an assignment to get familiar with the Next.js framework, focusing on project setup, routing, and creating components.
 
-First, run the development server:
+## Objective
+
+The purpose of this project is to explore how Next.js works by creating a basic app, modifying pages, and understanding file structure, while also learning how to push a local project's code to a remote Github repository.
+
+## Setting Up Next.js Project
+
+1. Run the following command to create a new Next.js project:
+
+```bash
+npx create-next-app@latest
+```
+
+2. A prompt will pop; here is an example of what I selected.
+   ![alt text](image.png)
+
+3. Navigate into the project directory:
+
+```bash
+cd project-name
+```
+
+4. To run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Creating A Page
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Modified the default homepage content in `src/pages/index.js` to display a quote.
+2. Create a new page:
+   - Create a directory (folder) name `about` inside the `pages` directory.
+   - Create an `index.js` file within the `about` directory with some content about Master Oogway.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Running Appilication
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Run the development server using:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run dev
+```
 
-## Learn More
+You can view the application at:
 
-To learn more about Next.js, take a look at the following resources:
+- http:/localhost:3000 (Homepage)
+- http:/localhost:3000/about (About Page)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## GitHub Repository Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Push local project to Github with the following steps:
 
-## Deploy on Vercel
+- Create a new repository on Github without a README.
+- Link your local repository with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git remote add origin https://github.com/yourusername/your-repository.git
+git branch -M main
+git push -u origin main
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Screenshots
+
+### Home
+
+![alt text](<Screenshot 2024-10-07 230150.png>)
+
+### About
+
+![alt text](<Screenshot 2024-10-07 230321.png>)
